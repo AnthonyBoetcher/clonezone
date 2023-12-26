@@ -13,51 +13,65 @@
 <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="22.png">
 <title>Clone Zone</title>
+<style>
+    #filter {
+        background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3), rgba(255, 140, 0, 0.5));
+        background-repeat: repeat-y;
+        background-size: contain;
+    }
 
-    <style>
-        #filter{
-            background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3), rgba(255, 140, 0, 0.5));
-            background-repeat:repeat-y;
-            background-size:contain;
-        }
-        body {
-            background-image: url('6.jpg');
-            background-repeat:repeat-y;
-            background-size:contain;
-            color: #fff;
-            font-family: 'Silkscreen', sans-serif;
-            align-items: center;   
-            align-content: center;
-            justify-content: center;
+    body {
+        background-image: url('6.jpg');
+        background-repeat: repeat-y;
+        background-size: contain;
+        color: #fff;
+        font-family: 'Silkscreen', sans-serif;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 0; /* Reset default margin */
+    }
 
-                }
-     
-         a:hover{
-            cursor: pointer;
-            color:red;
-            text-decoration: bold;
-        }
-        a {
-            text-decoration: none;
-            color:white;
+    a:hover {
+        cursor: pointer;
+        color: red;
+        text-decoration: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.41);
+        height: 40px;
+        font-size: 2rem;
+        margin: 0; /* Reset default margin */
+    }
+
+    #iframes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow iframes to wrap on smaller screens */
+        gap: 20px; /* Add some spacing between iframes */
+    }
+
+    @media screen and (max-width: 800px) {
+        iframe {
+            width: 100%; /* Make iframes take full width on smaller screens */
         }
 
-        h2{
-            width:100%;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.41);
-            height: 40px;
-            font-size: 2rem;
+        h2 {
+            height: auto; /* Allow the height to adjust based on content */
+            line-height: 1.5; /* Set a comfortable line height for wrapped text */
+            padding: 10px; /* Add padding to the heading for better visibility */
         }
-        iframe{
-            border:1px solid none;
-            
-        }
-       #iframes{
-           display: flex;
-           justify-content: center;
-       }
-    </style>
+    }
+</style>
+
 </head>
 <body> 
 <div id="filter">
@@ -70,7 +84,7 @@
             </div>
 
     <br>          
-    <h2 style="height: 80px">"that <i>second</i> model you make whilst you figure out how to use the software"</h2>
+    <h2>"that <i>second</i> model you make whilst you figure out how to use the software"</h2>
           <br>
           <div id="iframes">
            <iframe loading="lazy" width="800" height="450" src="https://www.youtube.com/embed/vdM_WwJs4mg?si=BiogPqo8fcZxgyeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
